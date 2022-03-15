@@ -63,7 +63,7 @@ namespace AccessModifiers
                 if(char.IsUpper(Pass[i]))
                     Upper=true;
             }
-                return false;
+                return Upper;
             }
 
 
@@ -76,7 +76,7 @@ namespace AccessModifiers
                 if (char.IsLower(Pass[i]))
                     Lower = true;
             }
-            return false;
+            return Lower;
             }
 
 
@@ -89,7 +89,7 @@ namespace AccessModifiers
                     if (char.IsDigit(Pass[i]))
                         Digit = true;
                 }
-                return false;
+                return Digit;
             }
         }
         //private static bool CheckValidation(string Password)
